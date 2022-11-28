@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+}
+button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    background-color: #565656;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 5px;
+    color: white;
+}
+.button:hover {
+    background: #414141;
+    cursor: pointer;
+}
+.button:active {
+    background: #363636;
+}
