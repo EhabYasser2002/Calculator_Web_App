@@ -9,7 +9,7 @@ export class AttributesService {
 
   constructor(private service: HttpService) { }
 
-  screenString: string="";
+  screenString: string="0";
   operator: string="";
 
   data: Data = new Data;
@@ -25,19 +25,17 @@ export class AttributesService {
     else return 8;
   }
 
-  sendRequest(op: string) {
-    var splitted = this.screenString.split(this.operator);
-    if(this.butType(this.operator) == 1 && splitted[1] == "") splitted[1] = splitted[0];
-    this.data.setNum1(splitted[0]);
-    this.data.setNum2(splitted[1]);
-    this.data.setOperator(this.operator);
+  split() {
+    return this.screenString.split(this.operator);
+  }
+
+  sendRequest() {
     console.log(this.data);
-    if(this.butType(op) == 1) this.operator=op;
-    else if(this.butType(op) == 2 || this.butType(op) == 7) this.operator="";
     this.service.postRequest("http://localhost:8080/calculate", this.data)
     .subscribe(
       (data:string) => { 
-      this.screenString = data + this.operator;
+      this.screenString += data;
+      if(String(this.data.getNum2()) != "NaN") this.screenString += this.operator;
       console.log(this.screenString);
       }
     )

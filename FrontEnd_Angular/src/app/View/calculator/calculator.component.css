@@ -1,6 +1,6 @@
 .top {
-    height: 100px;
-    width:288px;
+    height: 140px;
+    width: 432px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,9 +9,9 @@
     margin-bottom: 7px;
 }
 .calculator {
-    margin-top: 100px;
-    width: 300px;
-    height: 500px;
+    margin-top: 10px;
+    width: 450px;
+    height: 700px;
     border: 1px solid #000000;
     box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.2);
     background: #1a1a1a;
@@ -22,8 +22,8 @@
     border-radius: 10px;
 }
 .bottom {
-    height: 380px;
-    width: 300px;
+    height: 532px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

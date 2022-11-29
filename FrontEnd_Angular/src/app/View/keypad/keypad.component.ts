@@ -1,5 +1,6 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ClicksService } from 'src/app/Model/clicks.service';
+
 
 @Component({
   selector: 'app-keypad',

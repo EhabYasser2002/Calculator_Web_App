@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KeypadComponent } from './keypad.component';
+import { KeypadComponent } from "./KeypadComponent";
 
 describe('KeypadComponent', () => {
   let component: KeypadComponent;

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 77px;
     width: 100%;
 }
 button {
@@ -21,10 +21,10 @@ button {
     border-radius: 5px;
     color: white;
 }
-.button:hover {
+button:hover {
     background: #414141;
     cursor: pointer;
 }
-.button:active {
+button:active {
     background: #363636;
 }

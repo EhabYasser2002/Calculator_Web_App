@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { KeypadComponent } from './View/keypad/keypad.component';
+import { KeypadComponent } from "./View/keypad/keypad.component";
 import { ScreenComponent } from './View/screen/screen.component';
 import { CalculatorComponent } from './View/calculator/calculator.component';
 
